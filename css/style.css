@@ -1,0 +1,103 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, 'helvetica neue', monospace;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #137752;
+}
+
+.intro{
+  font-family: 'Chelsea Market', cursive;
+}
+
+.background-color{
+background-color: #fffceb;
+}
+
+
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center{
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.logo-spacing{
+  margin-bottom: 0;
+}
+
+.bg-orange {
+  background: rgba(255, 98, 0, 0.9);
+}
+
+.overlay {
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.highlight {
+  padding-bottom: 0.25em;
+  white-space: nowrap;
+}
+
+a{
+  color:#137752;
+}
+
+a:hover{
+  color: #ff6300;
+}
+
+a.pill-hover:hover{
+  color: #fffceb;
+}
+
+footer{
+  background-color: #137752;
+  color:#fffceb;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer hr{
+  width: 20%;
+}
+
+@media (min-width: 850px){
+  .highlight:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .highlight-aqua:before {
+    height: 14px;
+    background-image: url('../images/zigzag.svg');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+  }
+}
+
+
+@media (min-width: 480px) {
+  .m-auto-ns {
+    margin: auto;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 120px;
+  }
+}
